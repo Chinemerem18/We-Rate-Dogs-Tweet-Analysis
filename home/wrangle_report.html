@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <h1>Wrangle Report</h1>
+        <p>A wrangling project typically has three processes. Gathering, Assessing and Cleaning.  As part of my Udacity project, I was able to successfully complete all three processes to create a cleaned master set of the WeRateDogs data.
+        </p>
+        <h2>Gathering</h2>
+        <p>
+        At the gathering stage, you are tasked to collect data from different sources and load them into dataframes in pandas. You can get this data from files, web scraping or querying API's.In this stage I was able to perform the following;
+        <ul>
+        <li>Load CSV file into dataframe using pandas</li>
+        <li>Download file programmatically using requests</li>
+        </li> Query Twitter API and read data from JSON file line by line into the dataframe</li>
+        </ul>
+        </p>
+         <h2>Assessing</h2>
+        <p>
+        This is the stage where you access the data and determine dirtyness(quality) or tidiness issues that it posesses which may interrupt your work. There are two methods of assessing data;
+        <ul>
+        <li>Visually - Examining the dataset manually and spotting various issues</li>
+        <li>Programmatically - Querying the dataset with code to spot underlying issues</li>
+        </ul>
+        </p>
+        <p>
+        There are two groups of issues your assessment may reveal: Quality and Tidiness Issues. I was able to discover the following quality and tidiness issues;
+        <h3>Quality Issues</h3>
+        <ol>
+        <li>Timestamp and create_date columns in archive_df and tweet_data are strings</li>
+        <li>Hard coding of missing dog type and dog name columns entries to "None"</li>
+        <li>HTML tags in source column in archived_df </li>
+        <li>Missing entries in expanded_url column of archive_df</li>
+        <li>Hard coding of missing dog type and dog name columns entries to "None"</li>
+        <li>Double values in expanded_url column.</li>
+        <li>Retweets or replies need to be removed from the dataframe archive_df</li>
+        <li>Tweet ID in the dataframes are integers</li>
+        <li>Some columns have the wrong rating</li>
+        </ol>
+        <h3>Tidiness Issues</h3>
+        <ol>
+        <li>Dog type (e.g. puppo) should be in one column</li>
+        <li>Retweet count and favourite count should be in archive_df dataframe</li>
+        </ol>
+        </p>
+         <h2>Cleaning</h2>
+        <p>
+        At this stage, all the issues identified in the assessment stage are resolved allowing us to have a final, quality and tidy dataset.
+        </p>
+    </body>
+</html>
